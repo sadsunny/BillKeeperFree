@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+       <RelativeLayout
+        android:id="@+id/toptextlayoput"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="Payment"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineview"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/toptextlayoput"
+        android:background="@color/blue" >
+    </View>
+    
+    <EditText
+            android:id="@+id/payAmount"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:hint="Amout"
+            android:minHeight="48dip" 
+            android:singleLine="true"
+            android:maxLength="13"
+            android:inputType="number"
+            />
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/duedate_label"
+            style="@style/TextAppearance.EditEvent_LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:text="DATE" />
+
+        <Button
+            android:id="@+id/dueDate"
+            style="@style/TextAppearance.EditEvent_SpinnerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-12dip"
+            android:gravity="left|center_vertical"
+            android:hint="@string/hint_duedate" />
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/optional_label"
+            style="@style/TextAppearance.EditEvent_LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:text="@string/optional_label" />
+
+        <EditText
+            android:id="@+id/ConfNumber"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:capitalize="sentences"
+            android:hint="Conf.Number"
+            android:inputType="number"
+            android:minHeight="48dip" 
+            android:maxLength="13"
+            />
+    </LinearLayout>
+    
+      <EditText
+            android:id="@+id/memo"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:capitalize="sentences"
+            android:hint="@string/hint_memo"
+            android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+            android:minHeight="48dip" />
+    
+    
+
+</LinearLayout>

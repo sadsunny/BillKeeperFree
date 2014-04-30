@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/top_bac" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal|center"
+            android:textColor="@color/text_top_date"
+            android:textSize="18.7sp" />
+
+        <RelativeLayout
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0.7dp"
+            android:layout_alignParentLeft="true"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="52dp"
+                android:src="@drawable/previous_month_selector"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0.7dp"
+            android:layout_alignParentRight="true"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingRight="52dp"
+                android:src="@drawable/next_month_selector" />
+            
+        </RelativeLayout>
+    </RelativeLayout>
+    
+     <View
+            android:id="@+id/line_label1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_devide"
+            android:layout_below="@+id/header"
+            >
+     </View>
+
+    <RelativeLayout
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_label1"
+        android:visibility="visible" 
+        >
+
+        <LinearLayout
+            android:id="@+id/week_view"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/top_bac"
+            android:orientation="horizontal"
+            android:paddingRight="2dp"
+            android:weightSum="7" 
+            
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Sun" 
+                android:textColor="@color/text_week"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Mod"
+                 android:textColor="@color/text_week" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Tue" 
+                 android:textColor="@color/text_week"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Wed"
+                 android:textColor="@color/text_week" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Thu"
+                 android:textColor="@color/text_week" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Fri"
+                 android:textColor="@color/text_week" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Sat" 
+                 android:textColor="@color/text_week"/>
+        </LinearLayout>
+        
+      <View
+            android:id="@+id/line_label5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_devide"
+            android:layout_below="@+id/week_view"
+            >
+     </View>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_label5"
+            android:layout_gravity="center_horizontal"
+            android:horizontalSpacing="0dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="7"
+            android:stretchMode="columnWidth"
+            android:background="@color/calendar_bac"
+            android:verticalSpacing="0dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendar_view"
+        android:dividerHeight="0.7dp"
+        android:divider="@color/lightgray"
+        android:visibility="visible" >
+    </ListView>
+    
+     <View
+            android:id="@+id/line_label"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/lightgray"
+            android:layout_below="@+id/ListView1"
+            >
+       </View>
+    
+    <ExpandableListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendar_view"
+        android:dividerHeight="0dp"
+        android:visibility="gone"
+         >
+    </ExpandableListView>
+    
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="NULL"></string>
+    <string name="m_app_name">Bill Keeper</string>
+    <string name="app_name">Bill Keeper</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_base">Bill Keeper</string>
+    <string name="title_activity_testactivity">Testactivity</string>
+    <string name="title_activity_sliding_menu">SlidingMenuActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="search">Search</string>
+    <string name="setting">Setting</string>
+    <string name="addbill">Add</string>
+    <string name="nulltitle"> </string>
+    
+    <string name="passcode">Passcode</string>
+    <string name="add_bel">\"+\"</string>
+    
+    <string name="upcoming">Upcoming Bills</string>
+    <string name="calendar">Calendar</string>
+    <string name="category">Category</string>
+    <string name="title_activity_new_bill">Bill Keeper</string>
+    <string name="confirm">Confirm</string>
+    <string name="title_activity_edit_account">Edit Account</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_categories">Categories</string>
+    <string name="title_activity_mtest">MtestActivity</string>
+    <string name="discard_label">CANCEL</string>
+    <string name="save_label">DONE</string>
+    <string name="account_label">ACCOUNT</string>
+    <string name="hint_account">Select account</string>
+    <string name="hint_dueAmount">Due amount</string>
+    <string name="duedate_label">DUE DATE</string>
+    <string name="hint_duedate">Due date</string>
+    <string name="repeat_label">REPETITION</string>
+    <string name="hint_repeating">No repeating bill</string>
+    <string name="autopay_label">Auto Pay</string>
+    <string name="event_info_reminders_label">REMINDER</string>
+    <string name="hint_reminder">Set reminder</string>
+    <string name="creat_new_account_label">New account</string>
+    <string name="hint_account_na">Account name</string>
+    <string name="category_label">CATEGORY</string>
+    <string name="optional_label">OPTIONAL</string>
+    <string name="hint_accountno">Account No.</string>
+    <string name="hint_website">Website</string>
+    <string name="hint_phoneno">Phone No.</string>
+    <string name="hint_memo">Memo</string>
+    <string name="unknown_label">N/A</string>
+    <string name="select_account_label">Select account</string>
+    <string name="add_new_account_label">Add new account</string>
+    <string name="title_activity_add_new_account">AddNewAccountActivity</string>
+    <string name="select_category_label">Select category</string>
+    <string name="add_new_category_label">Add new category</string>
+    <string name="title_activity_add_new_category">AddNewCategoryActivity</string>
+    <string name="hint_mcategory_na">Category name</string>
+    <string name="icon_label">Icon</string>
+    <string name="repeat_unit">Every</string>
+    <string name="amount_type">Amount Type</string>
+    <string name="days">day</string>
+    <string name="past_due">PAST DUE</string>
+    <string name="due7">DUE WITHIN 7 DAYS</string>
+    <string name="due30">DUE WITHIN 30 DAYS</string>
+    <string name="title_activity_export">EXportActivity</string>
+    <string name="account">Account</string>
+    <string name="total">Total:</string>
+    <string name="title_activity_payment">Bill Detail</string>
+    <string name="title_activity_editbill">Edit Bill</string>
+    <string name="title_activity_account_detail">Account Detail</string>
+    <string name="title_activity_view_report">Account Report</string>
+    <string name="title_activity_setting">Settings</string>
+    <string name="title_activity_edit_category">Category</string>
+    <string name="title_activity_change">ChangeActivity</string>
+    <string name="title_activity_accountby">Category Report</string>
+
+</resources>

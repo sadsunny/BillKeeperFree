@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="@color/white">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/calendar_bac">
+
+    <LinearLayout
+        android:id="@+id/PieChartLayout"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+         >
+         
+        <ImageView
+            android:id="@+id/categorymageView"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+             />
+        
+        <TextView
+            android:id="@+id/categoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/categorymageView"
+            android:layout_marginLeft="8.7dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="Account"
+            android:textColor="@color/text_gray"
+            android:textSize="16sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/currencyTextView"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/total"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="@color/text_gray"
+             android:textSize="16sp"
+            />
+        
+         <TextView
+            android:id="@+id/currencyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/totalTextView"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_gray"
+            android:textSize="14.7sp"
+             />
+         
+          <TextView
+            android:id="@+id/totalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="TextView"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_gray"
+            android:textSize="14.7sp"
+             />
+          
+    </RelativeLayout>
+    </LinearLayout>
+    
+         <View
+            android:id="@+id/RelativeLayout"
+            android:layout_below="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/lightgray"
+            >
+        </View>
+
+    <ListView
+        android:id="@+id/account_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:divider="@color/lightgray"
+        android:dividerHeight="0.7dp">
+    </ListView>
+    
+     <View
+            android:id="@+id/line_label"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/lightgray"
+            >
+     </View>
+
+</LinearLayout>

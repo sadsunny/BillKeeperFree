@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/relativeLayoutBac"
+     >
+
+     <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+             >
+
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+            
+    <LinearLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="visible" 
+        android:orientation="vertical"
+        >
+        
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:singleLine="true"
+            android:text="@string/past_due"
+            android:textSize="13.3sp"
+            android:textColor="@color/text_little_title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+             />
+
+        <TextView
+            android:id="@+id/TextView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="21.3dp"
+             android:textSize="13.3sp"
+            android:textColor="@color/text_little_title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+
+    </RelativeLayout>
+    
+            <View
+            android:id="@+id/line_label"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            >
+       </View>
+        
+        <com.appxy.billkeeper.SubListView
+            android:id="@+id/overduelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+        
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameLayout1"
+        android:visibility="invisible"
+        android:orientation="vertical"
+         >
+        
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+         >
+
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:singleLine="true"
+            android:text="@string/due7"
+             android:textSize="13.3sp"
+            android:textColor="@color/text_little_title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/TextView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+             android:textSize="13.3sp"
+            android:textColor="@color/text_little_title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+    </RelativeLayout>
+    
+            <View
+            android:id="@+id/line_label1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            >
+     </View>
+    
+        <com.appxy.billkeeper.SubListView
+            android:id="@+id/overdue7list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+        
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameLayout2"
+         android:orientation="vertical"
+         android:visibility="invisible"
+          >
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+         >
+
+        <TextView
+            android:id="@+id/TextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:singleLine="true"
+            android:text="@string/due30"
+            android:textSize="13.3sp"
+            android:textColor="@color/text_little_title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/TextView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+             android:textSize="13.3sp"
+            android:textColor="@color/text_little_title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+    </RelativeLayout>
+    
+       <View
+            android:id="@+id/line_label"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            >
+     </View>
+        
+        <com.appxy.billkeeper.SubListView
+            android:id="@+id/overdue30list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+        
+    </LinearLayout>
+    </RelativeLayout>
+     </ScrollView>
+     
+</RelativeLayout>

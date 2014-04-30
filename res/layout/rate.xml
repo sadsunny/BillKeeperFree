@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:paddingTop="10dp"
+   android:paddingLeft="10dp"
+   android:paddingRight="10dp"
+   android:paddingBottom="20dp">
+    <RelativeLayout 
+         android:id="@+id/rate_rate"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/rate_text"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dp"
+        >
+        <ImageView 
+            android:id="@+id/rate_rateimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/rate_bg_selector"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text = "Rate Now"/>
+    </RelativeLayout>
+   
+    <RelativeLayout 
+         android:id="@+id/rate_remind"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/rate_rate"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dp"
+        >
+        <ImageView 
+            android:id="@+id/rate_remindimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/rate_bg_selector"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text = "Remind Me Later"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+         android:id="@+id/rate_cancel"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/rate_remind"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dp"
+        >
+        <ImageView 
+            android:id="@+id/rate_cancelimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/rate_bg_selector"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text = "No,Thanks"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="16sp"
+        android:text="If you enjoy Bill Keeper would you mind taking a moment to rate it? It won&apos;t take more than a minute. Thanks for your support!" />
+
+</RelativeLayout>

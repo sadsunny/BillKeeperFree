@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="gray">#999999</color>
+    <color name="read_bgcolor">#ffeeeeee</color>
+    <color name="transparent">#00000000</color>
+    
+     <color name="today_color">#ff42aeec</color>
+  
+     <color name="upcoming_line">#FFd4d4d7</color>
+  
+    <color name="black_gray">#CCCCCC</color>
+    <color name="white_gray">#f3f3f3</color>
+    <color name="lightgray">#e5e5e5</color>
+    <color name="blue">#33b5e5</color>
+    <color name="darkblue">#0099cc</color>
+    <color name="holoblue">#ff33b5e5</color>
+    <color name="blue_bright">#ff00ddff</color>
+    
+    <color name="main_blue">#ff72bdfb</color>
+	<color name="main_white">#f3f7fa</color>
+	<color name="main_background">#f8fbfd</color>
+	<color name="actionbar_background">#57c0fc</color>
+	<color name="actionbar_sel">#5A9BE9</color>
+
+	  <color name="text_sys_gray">#FFAAAAAA</color>
+	  
+	  
+	<color name="text_gray">#82888b</color>
+	<color name="text_black">#323232</color>
+	<color name="text_little_title">#7c8285</color>
+	<color name="bac_whitegray">#f8fbfd</color>
+	<color name="text_red">#e10c0c</color>
+    <color name="main_black">#727f87</color>
+    <color name="black_sel">#5c686f</color>
+    <color name="text_pass">#888b92</color>
+    <color name="text_top_date">#91979a</color>
+    <color name="text_week">#8d8f94</color>
+    
+    <color name="line_white">#cfd7dc</color>
+    <color name="line_black">#686b6c</color>
+    <color name="line_devide">#dee2e5</color>
+    <color name="line_more">#9ba7ad</color>
+    
+     <color name="line_left_black">#67747b</color>
+    
+    <color name="press_blue">#3b9eea</color>
+    
+    <color name="top_bac">#f3f7fa</color>
+    <color name="calendar_bac">#f8fbfd</color>
+	
+    <color name="but_color">#00d96e</color>
+    <color name="but_sel_color">#1daa41</color>
+</resources>

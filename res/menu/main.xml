@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/action_search" 
+        android:showAsAction="always"
+        android:title="@string/search"
+        android:visible="true">
+    </item>
+    
+     <item
+        android:id="@+id/setting"
+        android:icon="@drawable/action_setting" 
+        android:showAsAction="always"
+        android:title="@string/setting"
+        android:visible="true">
+    </item>
+    
+    <item
+        android:id="@+id/addbill"
+        android:icon="@drawable/action_add" 
+        android:showAsAction="always"
+        android:title="@string/addbill"
+        android:visible="true">
+    </item>
+   
+</menu>

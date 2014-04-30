@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView 
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        
+        <RelativeLayout
+        android:id="@+id/outLinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+    <LinearLayout
+        android:id="@+id/mLinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/account_label"
+            style="@style/TextAppearance.EditEvent_LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:text="@string/account_label" >
+         
+          </TextView>
+        <Button
+            android:id="@+id/accountNa"
+            style="@style/TextAppearance.EditEvent_SpinnerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-12dip"
+            android:gravity="left|center_vertical"
+            android:hint="@string/hint_account" 
+            android:textColor="@color/text_black"
+            android:focusable="true">
+       
+        </Button>
+         <requestFocus />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mRelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mLinearLayout1"
+        android:layout_marginBottom="6dip"
+        >
+
+        <EditText
+            android:id="@+id/dueAmount"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:hint="@string/hint_dueAmount"
+            android:minHeight="48dip" 
+            android:singleLine="true"
+            android:maxLength="13"
+            android:textColor="@color/text_black"
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/unknownBut"
+            style="?android:attr/buttonStyleInset"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignBaseline="@+id/dueAmount"
+            android:layout_alignRight="@+id/dueAmount"
+            android:text="@string/unknown_label"
+            android:layout_marginRight="1dp"
+            android:textSize="12sp"
+            android:visibility="visible" 
+            android:gravity="center"
+            android:textColor="@color/text_black"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mLinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mRelativeLayout2"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/duedate_label"
+            style="@style/TextAppearance.EditEvent_LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:text="@string/duedate_label" />
+
+        <Button
+            android:id="@+id/dueDate"
+            style="@style/TextAppearance.EditEvent_SpinnerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-12dip"
+            android:gravity="left|center_vertical"
+            android:hint="@string/hint_duedate" 
+            android:textColor="@color/text_black"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mLinearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mLinearLayout3"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/repeat_label"
+            style="@style/TextAppearance.EditEvent_LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:text="@string/repeat_label" />
+
+        <Button
+            android:id="@+id/repeating"
+            style="@style/TextAppearance.EditEvent_SpinnerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-12dip"
+            android:gravity="left|center_vertical"
+            android:hint="@string/hint_repeating" 
+            android:textColor="@color/text_black"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mLinearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:focusable="true"
+        android:layout_below="@+id/mLinearLayout4"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/autopay_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:minHeight="24dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:text="@string/autopay_label"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_black" />
+
+        <Switch
+            android:id="@+id/autoPayswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/autopay_label"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mLinearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_below="@+id/mLinearLayout5"
+        android:orientation="vertical"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/event_info_reminders_label"
+            style="@style/TextAppearance.EditEvent_LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:text="@string/event_info_reminders_label" />
+
+        <Button
+            android:id="@+id/reminder"
+            style="@style/TextAppearance.EditEvent_SpinnerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-12dip"
+            android:gravity="left|center_vertical"
+            android:hint="@string/hint_reminder" 
+            android:textColor="@color/text_black"/>
+    </LinearLayout>
+    
+   <ImageButton
+            android:id="@+id/delete_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_below="@+id/mLinearLayout6"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/delete_button_selector"
+            />
+   
+   <View 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/delete_bill"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            ></View>
+   
+    </RelativeLayout> 
+    
+</ScrollView>
+</LinearLayout>

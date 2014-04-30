@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appxy.billkeeper"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />  
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>  
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/myTheme" 
+        >
+        
+         <receiver android:name="com.appxy.billkeeper.service.BootCompletedReceiver">  
+                <intent-filter>  
+                    <action android:name="android.intent.action.BOOT_COMPLETED" />
+                </intent-filter>  
+         </receiver>  
+         
+         <receiver android:name="com.appxy.billkeeper.service.AlamrReceiver">
+            <intent-filter>
+                <action android:name="com.appxy.billkeeper.service.AlamrReceiver"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.appxy.billkeeper.service.PastDueReceiver">
+            <intent-filter>
+                <action android:name="com.appxy.billkeeper.service.PastDueReceiver"/>
+            </intent-filter>
+        </receiver>
+         
+         <service android:name="com.appxy.billkeeper.service.BillNotificationService">
+             
+             <intent-filter>
+                <action android:name="com.appxy.billkeeper.service.BillNotificationService" />
+            </intent-filter>
+         </service>  
+         
+          <service android:name="com.appxy.billkeeper.service.BillPastDueService">
+             
+             <intent-filter>
+            </intent-filter>
+         </service>  
+         
+            
+        <activity
+            android:name="com.appxy.billkeeper.Activity_Start"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.appxy.billkeeper.Activity_ChangePass" 
+            android:screenOrientation="portrait"
+            android:label="@string/passcode" >
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.Activity_ClosePass"
+            android:windowSoftInputMode="stateAlwaysVisible" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.Activity_HomeBack"
+            android:windowSoftInputMode="stateAlwaysVisible" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.Activity_Login"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.Activity_ResetPass"
+            android:windowSoftInputMode="stateAlwaysVisible" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.Activity_SetPass"
+            android:windowSoftInputMode="stateAlwaysVisible" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.activity.SlidingMenuActivity"
+            android:label="@string/title_activity_new_bill" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.appxy.billkeeper.activity.BaseActivity"
+            android:label="@string/title_activity_base" 
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        
+        <activity
+            android:name="com.appxy.billkeeper.SampleListFragment"
+            android:label="@string/title_activity_sliding_menu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.activity.ColorMenuFragment"
+            android:label="@string/title_activity_sliding_menu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.activity.SearchActivity"
+            android:label=""
+            android:screenOrientation="portrait" 
+            >
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.activity.NewBillActivity"
+            android:label="@string/title_activity_new_bill"
+            android:screenOrientation="portrait" 
+            android:theme="@style/baseActivityTheme"
+            >
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.activity.EditAccountActivity"
+            android:label="@string/title_activity_edit_account"
+            android:screenOrientation="portrait" >
+        </activity>
+ =
+        <activity
+            android:name="com.appxy.billkeeper.activity.TestActivity"
+            android:label="@string/title_activity_test" 
+            android:screenOrientation="portrait">
+        </activity>
+ =
+        <activity
+            android:name="com.appxy.billkeeper.activity.CategoriesActivity"
+            android:label="@string/title_activity_categories" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="org.achartengine.GraphicalActivity" 
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.appxy.billkeeper.activity.AddNewAccountActivity"
+            android:label="@string/title_activity_add_new_account" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.activity.AddNewCategoryActivity"
+            android:label="@string/title_activity_add_new_category"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.activity.ExportActivity"
+            android:label="Export Data"
+            android:screenOrientation="portrait" 
+            >
+        </activity>
+        
+        <activity
+            android:name="com.appxy.billkeeper.activity.AccountoExport"
+            android:label="Export Data"
+            android:screenOrientation="portrait" 
+            >
+        </activity>
+        
+        <activity
+            android:name="com.appxy.billkeeper.activity.PaymentActivity"
+            android:label="@string/title_activity_payment"
+            android:screenOrientation="portrait"
+            >
+            <meta-data 
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.appxy.billkeeper.Activity_Start"/>
+            
+        </activity>
+        
+        <activity
+            android:name="com.appxy.billkeeper.activity.EditBillActivity"
+            android:label="@string/title_activity_editbill"
+            android:screenOrientation="portrait" 
+            android:theme="@style/baseActivityTheme">
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.activity.AccountDetailActivity"
+            android:label="@string/title_activity_account_detail"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.activity.ViewReportActivity"
+            android:label="@string/title_activity_view_report"
+            android:screenOrientation="portrait" 
+            >
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.activity.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.activity.EditCategoryActivity"
+            android:label="@string/title_activity_edit_category"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appxy.billkeeper.activity.ChangeCategoryActivity"
+            android:label="@string/title_activity_change"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity
+            android:name="com.appxy.billkeeper.activity.AccountByCategoryActivity"
+            android:label="@string/title_activity_accountby"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+    </application>
+
+</manifest>

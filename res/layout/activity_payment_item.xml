@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="48dp" >
+    
+        <TextView 
+            android:id="@+id/date_textview"
+            android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignParentLeft="true"
+   		    android:layout_centerVertical="true"
+   		    android:textAppearance="?android:attr/textAppearanceMedium"
+   		    android:text="Textview"
+   		    android:textColor="@color/text_black"
+   		    android:textSize="16sp"
+   		    android:layout_marginLeft="15.3dp"
+            />
+    
+        <ImageView 
+            android:id="@+id/auto_image"
+            android:layout_width="30dp"
+   		    android:layout_height="20dp"
+   		    android:layout_toRightOf="@+id/date_textview"
+   		    android:layout_alignParentTop="true"
+   		    android:visibility="invisible"
+            />
+        <ImageView 
+            android:id="@+id/mark_image"
+            android:layout_width="30dp"
+   		    android:layout_height="20dp"
+   		    android:layout_toRightOf="@+id/date_textview"
+   		    android:layout_alignParentTop="true"
+   		    android:visibility="invisible"
+            />
+        
+        <TextView 
+            android:id="@+id/currency_textview"
+            android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_centerVertical="true"
+   		    android:layout_toLeftOf="@+id/paid_textview"
+   		    android:textAppearance="?android:attr/textAppearanceMedium"
+   		    android:text="$"
+   		    android:textColor="@color/text_gray"
+   		    android:textSize="16sp"
+            />
+        
+        <TextView 
+            android:id="@+id/paid_textview"
+            android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignParentRight="true"
+   		    android:layout_centerVertical="true"
+   		    android:textAppearance="?android:attr/textAppearanceMedium"
+   		    android:text="100"
+   		    android:textColor="@color/text_gray"
+   		     android:textSize="16sp"
+   		     android:layout_marginRight="15.3dp"
+            />
+    
+
+    </RelativeLayout>
+
+</RelativeLayout>

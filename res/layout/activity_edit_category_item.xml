@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" 
+        >
+
+        <ImageView
+            android:id="@+id/category_imageView"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+             />
+
+        <TextView
+            android:id="@+id/category_name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/category_imageView"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+             />
+        
+         <ImageView
+             android:id="@+id/Sort_ImageView"
+             android:layout_width="25dp"
+             android:layout_height="28dp"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="12dp"
+             android:background="@drawable/sort"
+             android:visibility="visible" />
+         
+
+    </RelativeLayout>
+
+</RelativeLayout>

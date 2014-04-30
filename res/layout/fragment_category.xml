@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentTop="true"
+        >
+
+       <LinearLayout 
+           android:id="@+id/PieChartLayout"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            >
+            
+        </LinearLayout>
+        
+         <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:background="#CCCCCC"
+            >
+
+             <RelativeLayout 
+            android:id="@+id/LinearLayout1"
+          	android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#999999" >
+                 
+                 <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="All Categories"
+                 android:textAppearance="?android:attr/textAppearance" 
+                 android:layout_gravity="center"
+                 android:layout_centerInParent="true"
+                 />
+                 
+             </RelativeLayout>
+
+             <ListView
+                 android:id="@+id/allCategorieslistView"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" 
+                 android:layout_below="@+id/LinearLayout1"
+                 >
+             </ListView>
+
+        </RelativeLayout> 
+        
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1" 
+        >
+
+        <ExpandableListView
+            android:id="@+id/expandableListView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </ExpandableListView>
+         
+    </LinearLayout>
+
+</RelativeLayout>

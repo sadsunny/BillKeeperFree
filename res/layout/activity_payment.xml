@@ -1,0 +1,344 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout 
+    android:id="@+id/mRelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/calendar_bac"
+    >
+
+  <FrameLayout 
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    
+   <LinearLayout
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="166dp"
+    android:orientation="vertical"
+    android:layout_marginTop="5.3dp"
+    android:layout_marginBottom="9.3dp"
+    android:layout_marginRight="9.3dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/payment_top_bacg"
+    >
+    
+    <RelativeLayout 
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="42.6dp"
+    android:layout_marginLeft="13.3dp"
+    android:layout_marginRight="10dp"
+    >
+    
+     <ImageView 
+    android:id="@+id/account_category_imageView"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    />
+     
+     <TextView
+            android:id="@+id/account_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/account_category_imageView"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:text="recurr bill account asfk dak"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            />
+     
+     <TextView
+            android:id="@+id/date_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginRight="3.3dp"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            android:text="agag"
+            />
+     
+      
+    </RelativeLayout>
+    
+      <View 
+        android:id="@+id/Line1"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="0.8dp"
+        android:background="@color/line_devide"
+        />
+      
+    <RelativeLayout 
+    android:id="@+id/RelativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="30.6dp"
+    android:layout_marginLeft="13.3dp"
+    android:layout_marginRight="10dp"
+    >
+        
+         <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Total"
+            android:textSize="16sp"
+            android:textColor="@color/text_gray"
+            />
+         
+          <TextView
+            android:id="@+id/ currency_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/Total_textView"
+            android:layout_marginRight="0dp"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="$"
+             android:textSize="16sp"
+            android:textColor="@color/text_gray"
+            />
+          
+           <TextView
+            android:id="@+id/Total_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginRight="3.3dp"
+             android:textSize="16sp"
+            android:textColor="@color/text_gray"
+            />
+        
+    </RelativeLayout>
+    
+      <RelativeLayout 
+    android:id="@+id/RelativeLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="30.6dp"
+    android:layout_marginLeft="13.3dp"
+    android:layout_marginRight="10dp"
+    >
+        
+         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Paid"
+            android:textColor="@color/text_gray"
+             android:textSize="16sp"
+            />
+         
+          <TextView
+            android:id="@+id/ currency_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/Paid_textView"
+            android:layout_marginRight="0dp"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="$"
+            android:textColor="@color/text_gray"
+             android:textSize="16sp"
+            />
+          
+           <TextView
+            android:id="@+id/Paid_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginRight="3.3dp"
+            android:textColor="@color/text_gray"
+             android:textSize="16sp"
+            />
+           
+      
+    </RelativeLayout>
+    
+          <View 
+        android:id="@+id/Line2"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="0.8dp"
+        android:background="@color/line_devide"
+        />
+        
+          
+       <RelativeLayout 
+    android:id="@+id/RelativeLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="30.6dp"
+    android:layout_marginLeft="13.3dp"
+    android:layout_marginRight="10dp"
+    >
+        
+         <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Remain"
+            android:textColor="@color/text_gray"
+            android:textSize="16sp"
+            />
+         
+          <TextView
+            android:id="@+id/ currency_textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/remain_textView"
+            android:layout_marginRight="0dp"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="$"
+            android:textColor="@color/green"
+            android:textSize="22sp"
+            
+            />
+          
+           <TextView
+            android:id="@+id/remain_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginRight="3.3dp"
+            android:textColor="@color/green"
+            android:textSize="22sp"
+            />
+           
+    </RelativeLayout>
+    
+       <TextView
+            android:id="@+id/rep_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.4dp"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="@color/text_gray"
+            android:paddingTop="1dp"
+            android:text="dsfs"
+            android:textSize="14dp"
+            />
+       
+   </LinearLayout>
+   
+   <ImageView 
+    android:id="@+id/paidImageView"
+    android:layout_width="140dp"
+    android:layout_height="80dp"
+    android:layout_gravity="center"
+    android:background="@drawable/paid"
+    android:visibility="invisible"
+           />
+   
+   </FrameLayout>
+   
+   <RelativeLayout
+       android:id="@+id/mRelativeLayout1"
+       android:layout_width="match_parent"
+       android:layout_height="40dp" 
+       android:layout_marginRight="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="8dp"
+       android:gravity="center_vertical"
+       android:layout_below="@+id/FrameLayout1"
+       >
+       
+       <ImageButton
+           android:id="@+id/mark_button"
+           android:layout_width="95dp"
+           android:layout_height="33.1dp" 
+           android:layout_alignParentLeft="true"
+           android:background="@drawable/make_as_paid_selector"
+          
+           />
+       
+       <ImageButton
+           android:id="@+id/quick_button"
+           android:layout_width="95dp"
+           android:layout_height="33.1dp" 
+           android:layout_centerHorizontal="true"
+           android:background="@drawable/quick_pay_selector"
+           />
+       
+       <ImageButton
+           android:id="@+id/add_pay_button"
+           android:layout_width="95dp"
+           android:layout_height="33.1dp" 
+           android:layout_alignParentRight="true"
+           android:background="@drawable/add_payment_selector"
+           />
+       
+   </RelativeLayout>
+   
+    <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mRelativeLayout1"
+            android:layout_marginLeft="15.3dp"
+            android:layout_marginTop="15dp"
+            android:text="Payment History"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp"
+            android:textColor="@color/text_gray"
+            />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/textView5"></LinearLayout>
+    
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/mListview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/lightgray"
+        android:dividerHeight="0.7dp"
+        android:layout_below="@+id/mRelativeLayout1"
+        >
+    </ListView>
+    
+    <View
+            android:id="@+id/line_label"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/lightgray"
+            android:layout_below="@+id/mListview"
+            >
+        </View>
+    
+</RelativeLayout>

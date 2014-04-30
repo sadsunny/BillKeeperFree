@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="repeat_requency">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    
+    <string-array name="repeat_unit">
+        <item>REPEAT DAILY</item>
+        <item>REPEAT WEEKLY</item>
+        <item>REPEAT MONTHLY</item>
+        <item>REPEAT YEARLY</item>
+    </string-array>
+    
+    <string-array name="repeat_type">
+        <item>Forever</item>
+        <item>Until a date</item>
+    </string-array>
+    
+    <string-array name="amount_type">
+        <item>Fixed</item>
+        <item>Variable</item>
+    </string-array>
+    
+    <string-array name="reminder">
+        <item>1 Day before</item>
+        <item>3 Days before</item>
+        <item>7 Days before</item>
+        <item>30 Days before</item>
+    </string-array>
+    
+    <string-array name="report_unit">
+        <item>Month</item>
+        <item>Quarter</item>
+        <item>Year</item>
+    </string-array>
+
+</resources>

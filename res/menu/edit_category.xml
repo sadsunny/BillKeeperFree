@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/confirm"
+        android:icon="@drawable/confirm"
+        android:showAsAction="always"
+        android:title="@string/confirm"/>
+    
+    <item
+        android:id="@+id/addbill"
+        android:icon="@drawable/action_add"
+        android:showAsAction="always"
+        android:title="Add"
+        android:visible="true">
+    </item>
+
+</menu>

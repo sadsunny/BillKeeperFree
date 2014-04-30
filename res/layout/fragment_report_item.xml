@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        >
+
+        <TextView
+            android:id="@+id/account_name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentTop="true"
+            android:gravity="bottom"
+            android:text="Account1"
+            android:singleLine="true"
+            android:maxEms="10"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            />
+        
+         <RelativeLayout
+        android:id="@+id/mRelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/account_name_textView"
+        >
+        
+          <ImageView
+            android:id="@+id/account_category_imageView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/main_blue"
+             />
+        
+        <TextView
+            android:id="@+id/percent_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/account_category_imageView"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.7dp"
+            android:text="%27"
+            android:textColor="@color/text_gray"
+            android:textSize="13.3sp"
+            />
+        
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/currency_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/amount_textView"
+            android:layout_marginRight="0dp"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:text="$"
+             android:textColor="@color/text_gray"
+            />
+        
+         <TextView
+            android:id="@+id/amount_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:text="500"
+            android:textColor="@color/text_gray"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/relativeLayoutBac"
+    >
+    
+    <FrameLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        
+   <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ExpandableListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:cacheColorHint="#00000000"
+        android:background="#00000000"
+        >
+    </ExpandableListView>
+    
+      <View
+            android:id="@+id/line_label"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="48dp"
+            android:background="@color/upcoming_line"
+            >
+       </View>
+</LinearLayout>
+
+    <LinearLayout 
+    android:id="@+id/up_bag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center" 
+    android:visibility="invisible">
+      
+       <TextView  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="No bills due within the next 30 days"
+    android:textSize="18sp"
+    android:textColor="@color/text_gray"
+    android:gravity="center"/>
+       
+       <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center" 
+    >
+    
+      <TextView  
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Tap "
+    android:gravity="center"
+    android:textSize="22sp"
+    android:textColor="@color/text_gray"/>
+      
+      <TextView  
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/add_bel"
+    android:gravity="center"
+    android:textSize="28sp"
+    android:textColor="@color/text_gray"/>
+      
+      <TextView  
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=" to add  bill"
+    android:gravity="center"
+    android:textSize="22sp"
+    android:textColor="@color/text_gray"/>
+     </LinearLayout>
+      
+   </LinearLayout>
+   
+    <ImageView 
+        android:id="@+id/ads"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|bottom"
+    android:src="@drawable/ads"/>
+
+ </FrameLayout>
+       
+</LinearLayout>

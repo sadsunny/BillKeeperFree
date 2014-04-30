@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+ 
+      <LinearLayout
+        android:id="@+id/cLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dip"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp" >
+
+        <EditText
+            android:id="@+id/mcategory_na"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:capitalize="sentences"
+            android:hint="@string/hint_mcategory_na"
+            android:inputType="textAutoCorrect|textCapSentences"
+            android:minHeight="48dip"
+            android:singleLine="true" 
+            />
+    </LinearLayout>
+    
+     <TextView
+            android:id="@+id/icon_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cLinearLayout"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/icon_label" 
+            android:textColor="@color/text_black"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    
+      <GridView
+            android:id="@+id/mGridView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/icon_label"
+            
+            android:columnWidth="50dp"
+            android:stretchMode="columnWidth" 
+            android:numColumns="5"
+            android:verticalSpacing="15dp"  
+            android:horizontalSpacing="2dp"
+            
+             />
+
+</RelativeLayout>
